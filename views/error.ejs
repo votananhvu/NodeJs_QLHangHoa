@@ -1,0 +1,16 @@
+<% if (message == "lỗi thêm sản phẩm") {
+    var thongbao = "Mã sản phẩm đã tồn tại, vui lòng nhập lại";
+    var link = "them";
+} else if(message == "lỗi sửa sản phẩm") {
+    var thongbao = "Không thể thay đổi mã sản phẩm đang không tồn tại trong database";
+    var link = "sua";
+} else {
+    var thongbao = "Đăng kí thành công";
+    var link = "";
+} %> 
+<h2 style="text-align:center;"><%= thongbao %></h2>
+<div align="center">
+    <a href="/<%= link%>">
+        <button type="button">Quay lại</button>
+    </a>
+</div>

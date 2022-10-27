@@ -1,0 +1,11 @@
+<% include header.ejs %> 
+    <!-- Page content-->
+    <div class="container-fluid">
+        <h1 class="mt-4">Đăng ký tài khoản</h1>
+        <form action="/dangky" method="POST">
+          Username: <input type="text" name="username" placeholder="Nhập tên tài khoản"><br><br> 
+          Password: <input type="password" name="password" placeholder="Nhập mật khẩu"><br><br>  
+          <button type="submit" class="btn btn-success">Tạo tài khoản</button>      
+        </form>
+    </div>
+<% include footer.ejs  %> 

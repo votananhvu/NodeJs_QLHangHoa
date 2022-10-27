@@ -1,0 +1,42 @@
+<% include header.ejs %> 
+    <!-- Page content--> 
+    <div class="container-fluid">
+        <h1 class="mt-4">Thêm sản phẩm</h1>
+        <form action="/them" method="POST" encType="multipart/form-data">
+          <table>
+            <tr>
+              <td>Mã SP:</td>
+              <td><input type="number" name="masp" placeholder="Mã sản phẩm"></td>
+            </tr>
+            <tr>
+              <td>Tên SP:</td>
+              <td><input type="text" name="tenmh" placeholder="Nhập tên mặt hàng"></td>
+            </tr>
+            <tr>
+              <td>Tên thương hiệu:</td>
+              <td><input type="text" name="thuonghieu" placeholder="Nhập tên thương hiệu"></td>
+            </tr>
+            <tr>
+              <td>Đơn giá:</td>
+              <td><input type="number" name="dongia" placeholder="Nhập đơn giá"></td>
+            </tr>
+            <tr>
+              <td>Hình ảnh:</td>
+              <td><input type="file" name="hinhanh"></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="submit">Thêm dữ liệu</button> 
+              </td>
+            </tr>
+          </table>
+          <!-- Mã SP: <input type="number" name="masp" placeholder="Mã sản phẩm"><br>
+          Tên SP: <input type="text" name="tenmh" placeholder="Nhập tên mặt hàng"><br>  
+          Tên thương hiệu: <input type="text" name="thuonghieu" placeholder="Nhập tên thương hiệu"><br>    
+          Đơn giá: <input type="number" name="dongia" placeholder="Nhập đơn giá"><br>   
+          Hình ảnh: <input type="file" name="hinhanh"><br>
+          <button type="submit">Thêm dữ liệu</button>       -->
+        </form>
+    </div>
+<% include footer.ejs  %> 
+

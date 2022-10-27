@@ -1,0 +1,10 @@
+<% include header.ejs %> 
+<div class="container-fluid">
+  <h1 class="mt-4">Xóa sản phẩm</h1>
+  <form action="/xoa" method="POST">
+    <input type="number" name="masp" placeholder="Mã sản phẩm cần xóa">
+    <!-- <input type="text" name="tenmh" placeholder="Tên sản phẩm cần xóa"> -->
+    <button type="submit">Xóa dữ liệu</button>
+  </form>
+</div>  
+<% include footer.ejs  %> 

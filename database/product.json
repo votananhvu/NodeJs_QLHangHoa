@@ -1,0 +1,178 @@
+[
+    {
+        "masp": 1,
+        "maloai": 1,
+        "name": "IPhone 12 Pro Max",
+        "thuonghieu": "Apple",
+        "dongia": 28000000,
+        "img": "iphone12promax.jpg"
+    },
+    {
+        "masp": 2,
+        "maloai": 1,
+        "name": "IPhone 13 Pro Max",
+        "thuonghieu": "Apple",
+        "dongia": 35000000,
+        "img": "iphone13promax.jpg"
+    },
+    {
+        "masp": 3,
+        "maloai": 2,
+        "name": "Xiaomi Redmi K40 Gaming Edition",
+        "thuonghieu": "Xiaomi",
+        "dongia": 7150000,
+        "img": "k40gaming.png"
+    },
+    {
+        "masp": 4,
+        "maloai": 1,
+        "name": "Xiaomi Redmi K40 Pro",
+        "thuonghieu": "Xiaomi",
+        "dongia": 9250000,
+        "img": "k40pro.jpg"
+    },
+    {
+        "masp": 5,
+        "maloai": 1,
+        "name": "Samsung Galaxy S20 Ultra",
+        "thuonghieu": "Samsung",
+        "dongia": 20000000,
+        "img": "s20ultra.png"
+    },
+    {
+        "masp": 6,
+        "maloai": 1,
+        "name": "Samsung Galaxy M22",
+        "thuonghieu": "Samsung",
+        "dongia": 4500000,
+        "img": "galaxym22.jpg"
+    },
+    {
+        "masp": 7,
+        "maloai": 1,
+        "name": "Samsung Galaxy A32 5G",
+        "thuonghieu": "Samsung",
+        "dongia": 6650000,
+        "img": "samsunga32.jpeg"
+    },
+    {
+        "masp": 8,
+        "maloai": 2,
+        "name": "Nubia Red Magic 5G",
+        "thuonghieu": "ZTE",
+        "dongia": 13550000,
+        "img": "redmagic5g.jpg"
+    },
+    {
+        "masp": 9,
+        "maloai": 2,
+        "name": "Nubia Red Magic 6S Pro",
+        "thuonghieu": "ZTE",
+        "dongia": 14250000,
+        "img": "redmagic6spro.png"
+    },
+    {
+        "masp": 10,
+        "maloai": 1,
+        "name": "IPhone XR",
+        "thuonghieu": "Apple",
+        "dongia": 9000000,
+        "img": "iphonexr.jpg"
+    },
+    {
+        "masp": 11,
+        "maloai": 1,
+        "name": "IPhone 12",
+        "thuonghieu": "Apple",
+        "dongia": 19000000,
+        "img": "iphone12.jpg"
+    },
+    {
+        "masp": 12,
+        "maloai": 1,
+        "name": "IPhone XS Max",
+        "thuonghieu": "Apple",
+        "dongia": 13250000,
+        "img": "iphonexsmax.jpg"
+    },
+    {
+        "masp": 13,
+        "maloai": 2,
+        "name": "Xiaomi Black Shark 4S Pro",
+        "thuonghieu": "Xiaomi",
+        "dongia": 16950000,
+        "img": "blackshark4spro.jpg"
+    },
+    {
+        "masp": 14,
+        "maloai": 1,
+        "name": "Xiaomi Poco M3",
+        "thuonghieu": "Xiaomi",
+        "dongia": 3100000,
+        "img": "pocom3.jpg"
+    },
+    {
+        "masp": 15,
+        "maloai": 1,
+        "name": "Xiaomi Redmi Note 8 Pro",
+        "thuonghieu": "Xiaomi",
+        "dongia": 3950000,
+        "img": "redminote8pro.jpg"
+    },
+    {
+        "masp": 16,
+        "maloai": 2,
+        "name": "Xiaomi Black Shark 4",
+        "thuonghieu": "Xiaomi",
+        "dongia": 9300000,
+        "img": "blackshark4.jpg"
+    },
+    {
+        "masp": 17,
+        "maloai": 1,
+        "name": "Samsung Galaxy A03s",
+        "thuonghieu": "Samsung",
+        "dongia": 3150000,
+        "img": "galaxya03s.jpg"
+    },
+    {
+        "masp": 18,
+        "maloai": 2,
+        "name": "Nubia Red Magic 6R",
+        "thuonghieu": "ZTE",
+        "dongia": 10250000,
+        "img": "redmagic6r.png"
+    },
+    {
+        "masp": 19,
+        "maloai": 1,
+        "name": "Realme V15 5G",
+        "thuonghieu": "Realme",
+        "dongia": 4750000,
+        "img": "realmev15.png"
+    },
+    {
+        "masp": 20,
+        "maloai": 1,
+        "name": "Realme GT Neo",
+        "thuonghieu": "Realme",
+        "dongia": 6350000,
+        "img": "realmegtneo.jpg"
+    },
+    {
+        "masp": 21,
+        "maloai": 1,
+        "name": "Realme Q3 Pro Carnival",
+        "thuonghieu": "Realme",
+        "dongia": 5850000,
+        "img": "realmeq3procarnival.jpg"
+    },
+    {
+        "masp": 22,
+        "maloai": 2,
+        "name": "Xiaomi Black Shark 3",
+        "thuonghieu": "Xiaomi",
+        "dongia": 9450000,
+        "img": "blackshark3.jpg"
+    }
+]

@@ -1,0 +1,113 @@
+<% include header.ejs %>
+  <!-- Page content-->
+  <% if (userId != undefined) { %>
+  <div class="container-fluid">
+    <h1 class="mt-4">Dữ liệu trong csdl</h1>
+    <table class="table">
+      <tr>
+        <th>Mã SP</th>
+        <th>Tên mặt hàng</th>
+        <th>Thương hiệu</th>
+        <th>Đơn giá</th>
+        <th>Hình ảnh</th>
+      </tr>
+      <% dshh.forEach(hh=> { %>
+        <tr>
+          <td><%= hh.masp %> </td>
+          <td><%= hh.name %></td>
+          <td><%= hh.thuonghieu %></td>
+          <td><%= hh.dongia %></td>
+          <td>
+            <% if(hh.img != null) { %> 
+              <img src='/images/<%= hh.img %>' height="100px">
+            <% } else { %> 
+              <img src="https://via.placeholder.com/100" height="100px">
+            <% } %> 
+          </td>
+          <td>
+              <a href="/sua/<%= hh.masp %>" class="btn btn-warning">Sửa</a>
+              <a onclick="xoadulieu('<%= hh._id %>')" class="btn btn-danger">
+                Xóa
+              </a>     
+          </td>
+        </tr>
+        <% }); %>
+    </table>
+  </div>
+
+  <script>
+    function xoadulieu(id) {
+      Swal.fire({
+        title: 'Muốn xóa mặt hàng này?',
+        text: "",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Xóa'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          document.location = "/xoa/" + id
+        }
+      })
+    }
+  </script>
+
+  <!-- Hiển thị phân trang -->
+  <div class="row">
+    <% if (timkiem == false) { %>
+      <% if (pages > 0) { %> 
+        <nav class="mx-auto">
+          <ul class="pagination" style="margin-top: 2rem;">
+            <!-- First Item-->
+            <% if (current == 1) { %> 
+              <li class="page-item disabled">
+                <a class="page-link">First</a>
+              </li>
+            <% } else { %>
+              <li>
+                <a class="page-link" href="/1">First</a>
+              </li>
+            <% } %>
+            <!-- Items -->
+            <% var i = (Number(current) > 3 ? Number(current) - 2 : 1) %>
+            <% if (i !== 1) { %>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">...</a>
+              </li>
+            <% } %>
+            <% for(; i<=(Number(current)+2) && i<=pages; i++) { %> 
+              <% if (i == current) { %>
+                <li class="page-item active">
+                  <a class="page-link" href="/<%= i %>/"><%= i %></a>
+                </li>
+              <% } else { %>
+                 <li class="page-item">
+                  <a class="page-link" href="/<%= i %>/"><%= i %></a>
+                 </li>
+              <% } %> 
+  
+              <% if (i == Number(current)+2 && i < pages) { %>
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+              <% } %>
+            <% } %> 
+  
+            <!-- Last Item -->
+            <% if (current == pages) { %>
+              <li class="page-item disabled">
+                <a class="page-link">Last</a>
+              </li>
+            <% } else { %>
+               <li class="page-item">
+                <a class="page-link" href="/<%= pages %>/">Last</a>
+               </li>
+            <% } %>
+          </ul>
+        </nav>
+      <% } %> 
+    <% } %> 
+  </div>
+  <% } %> 
+  <% include footer.ejs %>

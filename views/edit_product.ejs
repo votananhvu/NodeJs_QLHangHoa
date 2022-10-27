@@ -1,0 +1,38 @@
+<% include header.ejs %>
+  <!-- Page content-->
+  <div class="container-fluid">
+    <h1 class="mt-4">Sửa sản phẩm</h1>
+    <form action="/sua" method="POST" enctype="multipart/form-data">
+      <!-- <input type="hidden" name="maso" value="<= hh._id %>"> -->
+      <table>
+        <tr>
+          <td>Mã SP: </td>
+          <td><input type="number" name="masp" value="<%= hh.masp %>"></td>
+        </tr>
+        <tr>
+          <td>Tên SP: </td>
+          <td><input type="text" name="tenmh" value="<%= hh.name %>"></td>
+        </tr>
+        <tr>
+          <td>Thương hiệu: </td>
+          <td><input type="text" name="thuonghieu" value="<%= hh.thuonghieu %>"></td>
+        </tr>
+        <tr>
+          <td>Đơn giá: </td>
+          <td><input type="number" name="dongia" value="<%= hh.dongia %>"></td>
+        </tr>
+        <tr>
+          <td>Hình ảnh: </td>
+          <td><input type="file" name="hinhanh">
+            <% if(hh.img != null) { %> 
+              <img src='/images/<%= hh.img %>' height="100px">
+            <% } else { %> 
+              <img src="/images/no-image.jpg" height="100px">
+            <% } %> </td>
+        </tr>
+      </table>      
+      <button type="submit">Sửa dữ liệu</button>
+
+    </form>
+  </div>
+  <% include footer.ejs %>
